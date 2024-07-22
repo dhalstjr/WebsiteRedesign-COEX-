@@ -1,0 +1,70 @@
+@charset 'utf-8';
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+hr,
+.hidden {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  font: 1.8rem "Pretendard", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --title-color: #fff;
+}
+
+.indicator {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  gap: 3rem;
+}
+
+.indicator button {
+  width: 32px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.indicator button b {
+  display: none;
+}

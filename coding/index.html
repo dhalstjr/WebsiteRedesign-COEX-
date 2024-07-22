@@ -5,41 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>코엑스 아쿠아리움 리디자인</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
   </head>
 
   <body>
+    <div class="dim"></div>
+
     <div class="indicator">
-      <button class="button">Main</button>
-      <button class="button">Main</button>
-      <button class="button">Main</button>
-      <button class="button">Main</button>
+      <button type="button"><b>visual</b></button>
+      <button type="button"><b>program</b></button>
+      <button type="button"><b>information</b></button>
+      <button type="button"><b>event</b></button>
+      <button type="button"><b>review</b></button>
+      <button type="button"><b>benefits</b></button>
     </div>
 
-    <header id="header">
-      <div class="inner">
-        <nav>
-          <h1 class="logo">logo</h1>
-          <ul class="gnb">
-            <li><a href="#">MENU1</a></li>
-            <li><a href="#">MENU2</a></li>
-            <li><a href="#">MENU3</a></li>
-            <li><a href="#">MENU4</a></li>
-            <li><a href="#">MENU5</a></li>
-          </ul>
-
-          <div class="util">
-            <div class="ticket">티켓구매</div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
     <main id="container">
-      <section class="section1">
-        <div class="hero-page">
+      <header id="header">
+        <div class="inner">
+          <nav>
+            <h1 class="logo"></h1>
+            <ul class="gnb">
+              <li><a href="#">코엑스 아쿠아리움</a></li>
+              <li><a href="#">이용안내</a></li>
+              <li><a href="#">프로그램</a></li>
+              <li><a href="#">입장권</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+
+            <div class="util">
+              <a href="#" class="ticket">티켓구매</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section class="visual">
+        <div class="video">
           <!-- 이미지를 넣을 지 영상을 넣을 지 고민. 영상이 좋긴 함. -->
           <iframe
             src="https://www.youtube.com/embed/ca4Wn5ey2pM?si=fMFAhCoPMbs0ZaNw&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ca4Wn5ey2pM"
@@ -49,13 +54,16 @@
             allowfullscreen
           ></iframe>
         </div>
-        <div class="hero-con">
-          <strong>서울 도심 속 바다!</strong>
-          <h2><strong>코엑스</strong> 아쿠아리움</h2>
+
+        <div class="inner">
+          <div class="visual-con">
+            <strong>서울 도심 속 바다!</strong>
+            <h2>코엑스 아쿠아리움</h2>
+          </div>
         </div>
       </section>
 
-      <section class="section2"></section>
+      <section class="program"></section>
       <section class="section3"></section>
       <section class="section4"></section>
       <section class="section5"></section>
