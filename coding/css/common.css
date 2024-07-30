@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 a {
   text-decoration: none;
@@ -37,7 +38,7 @@ html {
 
 body {
   overflow: hidden;
-  font: 1.8rem "Pretendard", sans-serif;
+  font: 1.8rem "Pretendard", "Montserrat", sans-serif;
 }
 
 :root {

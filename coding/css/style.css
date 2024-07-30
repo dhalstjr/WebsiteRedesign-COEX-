@@ -25,13 +25,41 @@
   z-index: 1;
 }
 
+#header::before.w-bg {
+  content: "";
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#header.w-bg .logo a {
+  background-image: url(../image/w-logo.png);
+}
+
+#header.w-bg li a {
+  color: #000;
+}
+
+#header.w-bg .util .ticket {
+  color: #000;
+}
+
+#header.w-bg .util .ticket::before {
+  background-image: url(../image/w-util-icon-ticket.svg);
+}
+
 .inner {
   width: 172rem;
   /*   background: yellowgreen; */
   margin: 0 auto;
 }
 
-#header nav {
+header nav {
   height: 10rem;
 
   display: flex;
@@ -39,12 +67,13 @@
   align-items: center;
 }
 
-#header nav > * {
+header nav > * {
   z-index: 1;
 }
 
-#header .logo {
-  width: 15rem;
+.logo a {
+  display: block;
+  width: 18rem;
   height: 10rem;
   background: no-repeat 50% / cover;
   background-image: url(../image/logo.png);
@@ -93,11 +122,11 @@
 
 main > section {
   height: 100vh;
-  /*   padding: 15rem 0; */
+  padding: 140px 0 100px 0;
 }
 main > section.visual {
   background: skyblue;
-  height: 108rem;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -169,4 +198,93 @@ main > section.section6 {
   font-weight: 700;
   font-size: 7.2rem;
   margin-top: 2rem;
+}
+
+.pro-con {
+  text-align: center;
+}
+
+.pro-con h3 {
+  font-size: 7.2rem;
+  font-weight: 800;
+  font-family: "Montserrat";
+}
+.pro-con p {
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Pretendard";
+  color: #ccc;
+  margin-top: 3rem;
+}
+
+.pro-wrap {
+  margin-top: 2rem;
+}
+
+.pro-pg,
+.pro-pg-two {
+  display: flex;
+  justify-content: center;
+  gap: 40rem;
+  align-items: end;
+}
+
+.pro-pg-two {
+  margin-top: 5rem;
+  gap: 36rem;
+}
+
+.pic-deco {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.4;
+}
+
+.pg-pic {
+  position: relative;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.pg-pic.pic-one {
+  width: 32rem;
+  height: 32rem;
+}
+
+.pg-pic.pic-two {
+  width: 21.4rem;
+  height: 21.4rem;
+}
+.pg-pic.pic-three {
+  width: 27.6rem;
+  height: 27.6rem;
+}
+.pg-pic.pic-four {
+  width: 29.2rem;
+  height: 29.2rem;
+}
+.pg-pic.pic-five {
+  width: 30.6rem;
+  height: 30.6rem;
+}
+
+.pg-pic figure {
+  width: 100%;
+  height: 100%;
+}
+.pg-pic figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.pg-pic p {
+  margin-top: 2.4rem;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
