@@ -122,27 +122,25 @@ header nav > * {
 
 main > section {
   height: 100vh;
-  padding: 140px 0 100px 0;
-}
-main > section.visual {
-  background: skyblue;
-  height: 100vh;
+  padding: 150px 0 100px 0;
   position: relative;
   overflow: hidden;
 }
+main > section.visual {
+}
 main > section.program {
-  background: blue;
 }
-main > section.section3 {
-  background: yellow;
+main > section.information {
+  padding: 200px 0 100px 0;
 }
-main > section.section4 {
+main > section.event {
   background: green;
+  padding: 300px 0px 100px 0px;
 }
-main > section.section5 {
+main > section.review {
   background: skyblue;
 }
-main > section.section6 {
+main > section.benefit {
   background: gray;
 }
 
@@ -152,14 +150,16 @@ main > section.section6 {
   overflow: hidden;
 } */
 
+/* 메인(video) 페이지 부분 */
+
 .video {
-  width: 192rem;
-  height: 108rem;
-  background: yellow;
+  width: 100%;
+  height: 100vh;
+  /*   background: yellow; */
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* scale(1.1); */
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .video::after {
@@ -200,21 +200,53 @@ main > section.section6 {
   margin-top: 2rem;
 }
 
+/* 프로그램(program) 페이지 부분 */
+
+.pro-bg {
+  width: 100%;
+  height: 100vh;
+  /*   background: yellow; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* scale(1.1); */
+}
+
+.pro-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.pro-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .pro-con {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 
 .pro-con h3 {
+  color: #fff;
   font-size: 7.2rem;
   font-weight: 800;
   font-family: "Montserrat";
+  letter-spacing: 0.2rem;
 }
 .pro-con p {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 1.9rem;
+  font-weight: 200;
   font-family: "Pretendard";
-  color: #ccc;
-  margin-top: 3rem;
+  color: #fcfcfc;
+  margin-top: 2rem;
+  letter-spacing: 0.15rem;
 }
 
 .pro-wrap {
@@ -287,4 +319,322 @@ main > section.section6 {
   margin-top: 2.4rem;
   font-size: 1.7rem;
   font-weight: 400;
+  color: #fff;
+  font-family: "Pretendard";
+  letter-spacing: 0.1rem;
+}
+
+/* 정보(information) 페이지 부분 */
+
+.info-bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.info-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.info-con {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.info-con h3 {
+  color: #fff;
+  font-size: 7.2rem;
+  font-weight: 800;
+  font-family: "Montserrat";
+  letter-spacing: 0.2rem;
+}
+.info-con p {
+  font-size: 1.9rem;
+  font-weight: 200;
+  font-family: "Pretendard";
+  color: #fcfcfc;
+  margin-top: 2rem;
+  letter-spacing: 0.15rem;
+}
+
+.info-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9rem;
+  margin-top: 8rem;
+}
+
+.info-ticket {
+  padding: 5rem 4rem 4rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45.2rem;
+  height: 42.2rem;
+  border-radius: 1.2rem;
+  background: no-repeat 0 0 / cover;
+  background-image: url(../image/info-pic1.png);
+}
+
+.info-ticket.tk-two {
+  background-image: url(../image/info-pic2.png);
+}
+
+.info-ticket.tk-three {
+  background-image: url(../image/info-pic3.png);
+}
+
+.info-tic-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1.2rem;
+}
+
+.info-text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-family: "Pretendard";
+  letter-spacing: 0.15rem;
+  word-break: keep-all;
+  margin-top: 2rem;
+}
+.info-text h4 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.info-text p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 1.6rem;
+  color: #ddd;
+}
+
+.info-btn a {
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 200;
+
+  width: 14.8rem;
+  height: 4.8rem;
+  border-radius: 5rem;
+  border: 1px solid #fff;
+}
+
+/* 이벤트 페이지 부분 */
+
+.event-bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.event-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.event-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.event-slide-wrap {
+  position: relative;
+  /*   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.event-pic {
+  position: relative;
+  display: flex;
+  width: 62rem;
+  height: 45rem;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.event-pic:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.event-text-area {
+  color: #fff;
+  position: relative;
+  font-family: "Pretendard";
+  letter-spacing: 0.12rem;
+}
+.event-text-area h3 {
+  font-weight: 600;
+  font-size: 4.8rem;
+}
+.event-text-area p {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 1.7rem;
+  letter-spacing: 0.08rem;
+}
+
+.event-text-area p:nth-of-type(1) {
+  margin-top: 4rem;
+}
+
+.event-btn a {
+  margin-top: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 200;
+
+  width: 14.8rem;
+  height: 4.8rem;
+  border-radius: 5rem;
+  border: 1px solid #fff;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.event-slide-button {
+  position: relative;
+  background: no-repeat 0 0 / contain;
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-top: 7.8rem;
+  cursor: pointer;
+}
+
+.event-slide-button.prev {
+  background-image: url(../image/event-slide-button-left.png);
+}
+.event-slide-button.next {
+  background-image: url(../image/event-slide-button-right.png);
+}
+
+.review-bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.review-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.review-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.review-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Pretendard";
+  letter-spacing: 0.12rem;
+  color: #fff;
+}
+
+.review-text h4 {
+  font-weight: 600;
+  font-size: 5.6rem;
+}
+.review-text p {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.review-text p:nth-of-type(1) {
+  margin-top: 4rem;
+}
+
+.btn-review {
+  display: inline-block;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 6rem;
+  margin-top: 6rem;
+  font-size: 2rem;
+  font-weight: 200;
+  width: 20rem;
+  height: 7rem;
+}
+
+.btn-review a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 7rem;
+}
+
+.btn-review a::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: no-repeat 0 0 / contain;
+  background-image: url(../image/review-arrow.svg);
 }
