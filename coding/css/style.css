@@ -141,7 +141,7 @@ main > section.review {
   background: skyblue;
 }
 main > section.benefit {
-  background: gray;
+  padding: 200px 0 100px 0;
 }
 
 /* .section1 {
@@ -244,9 +244,9 @@ main > section.benefit {
   font-size: 1.9rem;
   font-weight: 200;
   font-family: "Pretendard";
-  color: #fcfcfc;
-  margin-top: 2rem;
-  letter-spacing: 0.15rem;
+  color: #fff;
+  margin-top: 2.8rem;
+  letter-spacing: 0.12rem;
 }
 
 .pro-wrap {
@@ -367,16 +367,16 @@ main > section.benefit {
   font-size: 1.9rem;
   font-weight: 200;
   font-family: "Pretendard";
-  color: #fcfcfc;
-  margin-top: 2rem;
-  letter-spacing: 0.15rem;
+  color: #fff;
+  margin-top: 2.8rem;
+  letter-spacing: 0.12rem;
 }
 
 .info-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 9rem;
+  justify-content: space-between;
+
   margin-top: 8rem;
 }
 
@@ -427,9 +427,10 @@ main > section.benefit {
 }
 .info-text p {
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 200;
   margin-top: 1.6rem;
   color: #ddd;
+  letter-spacing: 0.08rem;
 }
 
 .info-btn a {
@@ -637,4 +638,128 @@ main > section.benefit {
   height: 2.4rem;
   background: no-repeat 0 0 / contain;
   background-image: url(../image/review-arrow.svg);
+}
+
+.benefit-bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.benefit-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.benefit-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.benefit-con {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-family: "Pretendard";
+  letter-spacing: 0.2rem;
+}
+
+.benefit-con h3 {
+  font-size: 7.2rem;
+  font-weight: 800;
+  font-family: "Montserrat";
+}
+.benefit-con p {
+  margin-top: 2.8rem;
+  font-weight: 200;
+  font-size: 1.9rem;
+  letter-spacing: 0.12rem;
+}
+
+.benefit-kind {
+  width: 100%;
+}
+
+.bene-kind {
+  position: relative;
+  display: block;
+  width: 43.2rem;
+  height: 42.8rem;
+  background: no-repeat 0 0 / cover;
+
+  border-radius: 1.2rem;
+  text-align: center;
+  font-family: "Pretendard";
+  color: #fff;
+}
+
+.bene-kind::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.kind-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.bene-kind h4 {
+  margin-top: 5rem;
+  font-size: 2.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+.bene-kind p {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-top: 1.6rem;
+  letter-spacing: 0.08rem;
+  color: #ddd;
+}
+
+.btn-bene a {
+  width: 14.6rem;
+  height: 4.8rem;
+  font-weight: 200;
+  font-size: 1.6rem;
+  border-radius: 5rem;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 23rem;
+  /*   background: none; */
+}
+
+.bene-text {
+  position: relative;
+  z-index: 1;
+}
+.bene-kind.kind-one {
+  background-image: url(../image/benefit-kind-pic1.png);
+}
+.bene-kind.kind-two {
+  background-image: url(../image/benefit-kind-pic2.png);
+}
+.bene-kind.kind-three {
+  background-image: url(../image/benefit-kind-pic3.png);
+}
+
+#footer {
+  height: 50rem;
 }
