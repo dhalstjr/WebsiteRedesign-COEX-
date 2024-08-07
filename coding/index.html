@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>코엑스 아쿠아리움 리디자인</title>
+    <!-- 우리 파일보다 항상 먼저 호출 (fullpage.css) -->
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+
     <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
     <script src="./js/script.js"></script>
   </head>
 
   <body>
     <div class="dim"></div>
 
-    <div class="indicator">
-      <button type="button"><b>visual</b></button>
-      <button type="button"><b>program</b></button>
-      <button type="button"><b>information</b></button>
-      <button type="button"><b>event</b></button>
-      <button type="button"><b>review</b></button>
-      <button type="button"><b>benefits</b></button>
-    </div>
+    <ul class="indicator">
+      <li type="button"><b>visual</b></li>
+      <li type="button"><b>program</b></li>
+      <li type="button"><b>information</b></li>
+      <li type="button"><b>event</b></li>
+      <li type="button"><b>review</b></li>
+      <li type="button"><b>benefits</b></li>
+    </ul>
 
-    <main id="container">
+    <main id="fullfage">
       <header id="header">
         <div class="inner">
           <nav>
@@ -45,7 +49,7 @@
         </div>
       </header>
 
-      <section class="visual">
+      <section class="section visual">
         <div class="video">
           <!-- 이미지를 넣을 지 영상을 넣을 지 고민. 영상이 좋긴 함. -->
           <iframe
@@ -65,7 +69,7 @@
         </div>
       </section>
 
-      <section class="program">
+      <section class="section program">
         <div class="pro-bg">
           <img src="./image/program-bg.png" alt="" />
         </div>
@@ -124,7 +128,7 @@
         </div>
       </section>
 
-      <section class="information">
+      <section class="section information">
         <div class="info-bg">
           <img src="./image/information-bg.png" alt="" />
         </div>
@@ -176,7 +180,7 @@
         </div>
       </section>
 
-      <section class="event">
+      <section class="section event">
         <div class="event-bg">
           <img src="./image/event-bg.png" alt="" />
         </div>
@@ -212,7 +216,7 @@
           </div>
         </div>
       </section>
-      <section class="review">
+      <section class="section review">
         <div class="review-bg">
           <img src="./image/review-bg.png" alt="" />
         </div>
@@ -242,7 +246,7 @@
           </div>
         </div>
       </section>
-      <section class="benefit">
+      <section class="section benefit">
         <div class="benefit-bg">
           <img src="./image/benefit-bg.png" alt="" />
         </div>
@@ -282,7 +286,9 @@
       </section>
     </main>
 
-    <section class="footer" id="footer">안녕!</section>
+    <footer id="footer">안녕!</footer>
+
+    <button type="button" class="'btn-top">TOP</button>
     <hr />
   </body>
 </html>

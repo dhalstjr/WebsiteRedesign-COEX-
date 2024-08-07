@@ -761,5 +761,6 @@ main > section.benefit {
 }
 
 #footer {
-  height: 50rem;
+  height: 45rem;
+  background: #333;
 }
