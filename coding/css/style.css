@@ -761,6 +761,135 @@ main > section.benefit {
 }
 
 #footer {
-  height: 45rem;
-  background: #333;
+  height: 50rem;
+  background: #222;
+}
+
+.foot-top {
+  position: relative;
+  height: 35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-top:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  transform: translate(0%, 0%);
+  width: 120%;
+  height: 1px;
+  background: #fff;
+}
+
+.foot-logo a {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+}
+
+.foot-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.foot-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: "Pretendard";
+}
+
+.foot-link li {
+  margin-top: 4rem;
+}
+
+.foot-link li:nth-of-type(1) {
+  margin-top: 0;
+}
+
+.foot-link .link-policy {
+  font-weight: 700;
+}
+/* .foot-link .link-policy:after {
+  content: "";
+  display: block;
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 0.5px;
+  background: #fff;
+} */
+
+.foot-bottom {
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foot-text {
+  color: #fff;
+  font-family: "Pretendard";
+}
+
+.foot-text h5 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.foot-text p {
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-top: 0.6rem;
+}
+
+.foot-text p:nth-of-type(1) {
+  margin-top: 1.8rem;
+}
+
+.foot-sns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.foot-sns img {
+  width: 100%;
+  height: 100%;
+}
+
+.facebook a {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.youtube a {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.instagram a {
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  color: #000;
+  font-weight: 600;
+  font-size: 2.4rem;
+  font-family: "Montserrat";
+  width: 8rem;
+  height: 8rem;
+  background: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
