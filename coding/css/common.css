@@ -66,6 +66,6 @@ body {
   cursor: pointer;
 }
 
-.indicator button b {
+.indicator b {
   display: none;
 }

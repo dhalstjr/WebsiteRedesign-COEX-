@@ -1,9 +1,34 @@
 $(function () {
   // 대상을 변수에 저장
+
+  // 풀페이지 변수 적용
   const $window = $(window);
   const $sideDot = $(".indicator button");
   const $section = $("#container > section");
   const $btnTop = $(".btn-top");
+
+  /* 헤더 부분 변수 저장 */
+  const $header = $("#header");
+  const $menu = $(".gnb > li");
+  const $submenu = $(".submenu");
+  const $subNotice = $(".sub-notice");
+  const duration = 300;
+
+  // 헤더 부분 실행
+  $menu.on("mouseenter", function () {
+    // 메뉴 한번에 떨어뜨리기
+    const menuIdx = $(this).index();
+    $menu.removeClass("on").eq(menuIdx).addClass("on");
+    $submenu.stop().fadeIn(duration);
+    /*     $subNotice.stop().slideDown(duration); */
+    $header.addClass("active");
+  });
+
+  $menu.on("mouseleave", function () {
+    $submenu.stop().fadeOut(duration);
+    $menu.removeClass("on");
+    $header.removeClass("active");
+  });
 
   // 항목별 인덱스를 활용
   let secIdx = 0;

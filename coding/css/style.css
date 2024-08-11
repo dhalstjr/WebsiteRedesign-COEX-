@@ -71,6 +71,33 @@ header nav > * {
   z-index: 1;
 }
 
+/* header 배경 만들기 */
+
+#header::after {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 0px; /* 자바 들어가기 전에 0으로 바꿔줘야함 */
+  background: rgba(255, 255, 255, 0.2);
+
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+
+#header.active::after {
+  height: 40rem;
+}
+
+#header.active::before {
+  opacity: 1;
+}
+
+#header.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 .logo a {
   display: block;
   width: 18rem;
@@ -79,17 +106,67 @@ header nav > * {
   background-image: url(../image/logo.png);
 }
 
+/* gnb 활성화 (submenu) 보이게 */
+
 .gnb {
   display: flex;
   margin: 0 auto;
+
+  z-index: 10;
 }
 
-.gnb li a {
+.gnb > li > a {
   font-weight: 400;
   font-size: 1.8rem;
   font-family: Pretendard;
   color: #fff;
   padding: 0 7rem;
+}
+
+.gnb > li {
+  position: relative;
+}
+
+/* submenu 디자인 및 구성 */
+
+.submenu {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+
+  /* jQuery 동작을 위한 display : none */
+  display: none;
+  padding-top: 4.5rem;
+}
+
+.submenu li a {
+  display: block;
+  padding: 16px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: Pretendard;
+}
+
+.submenu li a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+}
+
+.sub-notice {
+  position: absolute;
+  top: 6rem;
+  left: -135%;
+  width: 30.5rem;
+  height: 30rem;
+
+  padding-top: 4.5rem;
+  background: no-repeat 0 0 / contain;
+  background-image: url(../image/sub-notice.png);
 }
 
 .util {
