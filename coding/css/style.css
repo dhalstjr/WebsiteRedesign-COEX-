@@ -206,16 +206,17 @@ main > section {
 main > section.visual {
 }
 main > section.program {
+  padding: 150px 0 0px 0;
 }
 main > section.information {
   padding: 200px 0 100px 0;
 }
 main > section.event {
-  background: green;
+  /*   background: green; */
   padding: 300px 0px 100px 0px;
 }
 main > section.review {
-  background: skyblue;
+  /*   background: skyblue; */
 }
 main > section.benefit {
   padding: 200px 0 100px 0;
@@ -327,7 +328,11 @@ main > section.benefit {
 }
 
 .pro-wrap {
-  margin-top: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 9rem;
 }
 
 .pro-pg,
@@ -359,6 +364,18 @@ main > section.benefit {
   position: relative;
   border-radius: 50%;
   text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.pg-pic:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .pg-pic.pic-one {
@@ -390,15 +407,22 @@ main > section.benefit {
 .pg-pic figure img {
   width: 100%;
   height: 100%;
+  transition: 0.4s;
 }
 
-.pg-pic p {
-  margin-top: 2.4rem;
+.pr-pic-text p {
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  /*   margin-top: 2.4rem; */
   font-size: 1.7rem;
   font-weight: 400;
   color: #fff;
   font-family: "Pretendard";
   letter-spacing: 0.1rem;
+  z-index: 1;
 }
 
 /* 정보(information) 페이지 부분 */
@@ -1004,4 +1028,8 @@ main > section.benefit {
 .event-slide-button.prev:hover {
   background-image: url(../image/iconamoon_arrow-left-2-black.svg);
   border: none;
+}
+
+.pg-pic:hover figure img {
+  transform: scale(1.1);
 }
