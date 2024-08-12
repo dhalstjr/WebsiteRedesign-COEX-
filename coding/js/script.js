@@ -90,4 +90,19 @@ $(function () {
       $header.removeClass("w-bg");
     }
   }
+
+  // 3. 초기화 실행 slide를 위한
+  const swiper = new Swiper(".event-slider", {
+    autoplay: {
+      delay: 3000,
+    },
+
+    loop: true,
+    speed: 1000,
+
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+  });
 });
