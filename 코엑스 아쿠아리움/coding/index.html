@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코엑스 아쿠아리움 리디자인</title>
+    <!-- 우리 파일보다 항상 먼저 호출 (fullpage.css) -->
+     <!-- 1. 필요한 파일 넣기 :  우리것보다 먼저(슬라이드 구현) -->
+      
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="dim"></div>
+
+    <ul class="indicator">
+      <li data-menuanchor = 'visual'><a href="#visual"><b>visual</b></a</li>
+      <li data-menuanchor = 'program'><a href="#program"><b>program</b></a></li>
+      <li data-menuanchor = 'information'><a href="#information"><b>information</b></a></li>
+      <li data-menuanchor = 'event'><a href="#event"><b>event</b></a></li>
+      <li data-menuanchor = 'review'><a href="#review"><b>review</b></a></li>
+      <li data-menuanchor = 'benefits'><a href="#benefits"><b>benefits</b></a></li>
+    </ul>
+
+    <main id="fullpage">
+      <header id="header">
+        <div class="inner">
+          <nav>
+            <h1 class="logo">
+              <a href="#"><i class="hidden">logo</i></a>
+            </h1>
+            <ul class="gnb">
+
+              
+              
+              <li>
+                <a href="#">코엑스 아쿠아리움</a>
+                <ul class="submenu">
+                  <div class="sub-notice"></div>
+                  <li><a href="#"><b>상상물고기 나라</b></a></li>
+                  <li><a href="#">아마조니아 월드</a></li>
+                  <li><a href="#">산호 미술관</a></li>
+                  <li><a href="#">바다왕국</a></li>
+                  <li><a href="#">해저터널</a></li>
+                  <li><a href="#">더보기</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">이용안내</a>
+                <ul class="submenu">
+                  <li><a href="#">내 예약관리</a></li>
+                  <li><a href="#">운영시간</a></li>
+                  <li><a href="#">동선 안내</a></li>
+                  <li><a href="#">위치 및 주차</a></li>
+                  <li><a href="#">편의시설</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">프로그램</a>
+                <ul class="submenu">
+                  <li><a href="#">인어수중공연</a></li>
+                  <li><a href="#">무시무시한 상어들</a></li>
+                  <li><a href="#">샌드타이거 샤크</a></li>
+                  <li><a href="#">‘아쿠아리스트’ 직업체험</a></li>
+                </ul>
+              </li>
+
+
+              <li>
+                <a href="#">입장권</a>
+                <ul class="submenu">
+                  <li><a href="#">일반 입장권</a></li>
+                  <li><a href="#">연간 회원권</a></li>
+                  <li><a href="#">프로모션 및 우대</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">고객센터</a>
+                <ul class="submenu">
+                  <li><a href="#">자주 묻는 질문</a></li>
+                  <li><a href="#">1 : 1 문의하기</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="util">
+              <a href="#" class="ticket">티켓구매</a>
+            </div>
+          </nav>
+          
+
+          </div>
+        </div>
+      </header>
+
+      <section class="section visual">
+        <div class="video">
+          <!-- 이미지를 넣을 지 영상을 넣을 지 고민. 영상이 좋긴 함. -->
+          <iframe
+            src="https://www.youtube.com/embed/ca4Wn5ey2pM?si=fMFAhCoPMbs0ZaNw&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=ca4Wn5ey2pM"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="inner">
+          <div class="visual-con">
+            <strong>서울 도심 속 바다!</strong>
+            <h2>코엑스 아쿠아리움</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section program">
+        <div class="pro-bg">
+          <img src="./image/program-bg.png" alt="" />
+        </div>
+        <div class="inner">
+          <div class="pro-con">
+            <h3>Program</h3>
+            <p>우리 모두 즐거운 코엑스 아쿠아리움의 모든 것을 즐겨보세요!</p>
+          </div>
+          <div class="pro-wrap">
+            <div class="pro-pg">
+              <div class="pg-pic pic-one">
+                <a href="#">
+                  <div class="pic-deco"></div>
+                  <figure>
+                    <img src="./image/pro-pic1.png" alt="상어사진" />
+                  </figure>
+                  <div class="pr-pic-text">
+                    <p>무시무시한 상어의 식사시간</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="pg-pic pic-two">
+                <a href="#">
+                  <div class="pic-deco"></div>
+                  <figure>
+                    <img src="./image/pro-pic2.png" alt="공연사진" />
+                  </figure>
+                </a>
+                <div class="pr-pic-text">
+                  <p>인어수중공연</p>
+                </div>
+              </div>
+
+              <div class="pg-pic pic-three">
+                <a href="#">
+                  <div class="pic-deco"></div>
+                  <figure>
+                    <img
+                      src="./image/pro-pic3.png"
+                      alt="상상물고기 나라 사진"
+                    />
+                  </figure>
+                </a>
+                <div class="pr-pic-text">
+                  <p>상상물고기 나라</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-pg-two">
+              <div class="pg-pic pic-four">
+                <a href="#">
+                  <div class="pic-deco"></div>
+                  <figure>
+                    <img
+                      src="./image/pro-pic4.png"
+                      alt="샌드타이거 샤크 사진"
+                    />
+                  </figure>
+                </a>
+                <div class="pr-pic-text">
+                  <p>샌드타이거 샤크</p>
+                </div>
+              </div>
+
+              <div class="pg-pic pic-five">
+                <a href="#">
+                  <div class="pic-deco"></div>
+                  <figure>
+                    <img
+                      src="./image/pro-pic5.png"
+                      alt="아쿠아리스트 직업체험 사진"
+                    />
+                  </figure>
+                </a>
+                <div class="pr-pic-text">
+                  <p>‘아쿠아리스트’ 직업체험</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section information">
+        <div class="info-bg">
+          <img src="./image/information-bg.png" alt="" />
+        </div>
+        <div class="inner">
+          <div class="info-con">
+            <h3>Information</h3>
+            <p>이용안내, 혜택, 구매할인 등 자세한 정보를 안내해드립니다.</p>
+          </div>
+
+          <div class="info-wrap">
+            <div class="info-ticket">
+              <div class="info-tic-bg tk-one"></div>
+              <div class="info-text">
+                <h4>성인 입장권</h4>
+                <p>만13세부터 성인 입장권을 구매해주세요!</p>
+
+                <div class="info-btn">
+                  <a href="#">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-ticket tk-two">
+              <div class="info-tic-bg"></div>
+              <div class="info-text">
+                <h4>어린이 입장권</h4>
+                <p>만36개월부터 12세까지는 어린이 입장권을 구매해주세요!</p>
+
+                <div class="info-btn">
+                  <a href="#">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-ticket tk-three">
+              <div class="info-tic-bg"></div>
+              <div class="info-text">
+                <h4>연간 회원권</h4>
+                <p>
+                  1년 동안 원하는 횟수만큼 코엑스 아쿠아리움 입장 가능합니다!
+                </p>
+
+                <div class="info-btn">
+                  <a href="#">자세히 보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section event">
+        <div class="event-bg">
+          <img src="./image/event-bg.png" alt="" />
+        </div>
+        <div class="inner">
+          <!-- 2. swiper.js가 요구하는 HTML 구조 만들기 : 반드시 부모 div를 만들어서 사용 -->
+
+          <!-- 전체적인 크기와 배치를 결정하는 div -->
+          <div class="event-slider-wrap">
+
+            <!-- 슬라이더를 구별하는 이름 -->
+             <!-- swiper 옆에 event-slider 이름을 생성 -->
+            <div class="swiper event-slider">
+
+              <!-- Additional required wrapper 감싸는 부분 -->
+<div class="swiper-wrapper">
+  <!-- Slides 하는 부분 -->
+
+                <div class="swiper-slide">
+
+                  <div class="event-pic">
+                    <img src="./image/event-pic1.png" alt="" />
+                  </div>
+                  <div class="event-text-area">
+                    <h3>이벤트</h3>
+                    <p class="text-one">
+                      다양한 이벤트와 '아쿠아리스트' 직업 체험까지,
+                    </p>
+                    <p class="text-two">
+                      코엑스 아쿠아리움에서는 다양하고 신나는 액티비티가 여러분을
+                      기다리고 있습니다.
+                    </p>
+                    <p class="text-three">
+                      가족, 커플 등이 함께 즐길 수 있는 코엑스 아쿠아리움에서 진행되는
+                      이벤트를 소개합니다!
+                    </p>
+                    <div class="event-btn">
+                      <a href="#">자세히 보기</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- slider2 -->
+                <div class="swiper-slide">
+                  <div class="event-pic">
+                    <img src="./image/event-pic1.png" alt="" />
+                  </div>
+                  <div class="event-text-area">
+                    <h3>이벤트</h3>
+                    <p class="text-one">
+                      다양한 이벤트와 '아쿠아리스트' 직업 체험까지,
+                    </p>
+                    <p class="text-two">
+                      코엑스 아쿠아리움에서는 다양하고 신나는 액티비티가 여러분을
+                      기다리고 있습니다.
+                    </p>
+                    <p class="text-three">
+                      가족, 커플 등이 함께 즐길 수 있는 코엑스 아쿠아리움에서 진행되는
+                      이벤트를 소개합니다!
+                    </p>
+                    <div class="event-btn">
+                      <a href="#">자세히 보기</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- slider3 -->
+                <div class="swiper-slide">
+                  <div class="event-pic">
+                    <img src="./image/event-pic1.png" alt="" />
+                  </div>
+                  <div class="event-text-area">
+                    <h3>이벤트</h3>
+                    <p class="text-one">
+                      다양한 이벤트와 '아쿠아리스트' 직업 체험까지,
+                    </p>
+                    <p class="text-two">
+                      코엑스 아쿠아리움에서는 다양하고 신나는 액티비티가 여러분을
+                      기다리고 있습니다.
+                    </p>
+                    <p class="text-three">
+                      가족, 커플 등이 함께 즐길 수 있는 코엑스 아쿠아리움에서 진행되는
+                      이벤트를 소개합니다!
+                    </p>
+                    <div class="event-btn">
+                      <a href="#">자세히 보기</a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+               
+               
+               <div class="button-wrap">
+                 <a href="#">
+                   <div class="event-slide-button prev"></div>
+                  </a>
+                  
+                  <a href="#">
+                    <div class="event-slide-button next"></div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+        </div>
+      </section>
+      <section class="section review">
+        <div class="review-bg">
+          <img src="./image/review-bg.png" alt="" />
+        </div>
+
+        <div class="review-text">
+          <h4>코엑스 아쿠아리움 방문 후기</h4>
+          <p>
+            시설 너무 아기자기 예쁘고 깔끔, 볼거리 정말 많고 보기만하는게아니라
+            잉어먹이주기, 손 넣어서 닥터피쉬 체험, 인어쇼등
+          </p>
+          <p>
+            체험 및 공연으로 입장료가 전혀 아깝지않은 훌륭한 경험이었습니다.
+            어렸을적에 왔었는데, 제가 커서 제 아이를 데리고 오니
+          </p>
+          <p>
+            어려서 왔을때랑은 다른 감동이 있네요. 너무나 좋은 시간을 보냈습니다.
+            제가 미국에서 7년 살다왔는데요. 미국 몬트레이 수족관과
+          </p>
+          <p>
+            비교해도 규모는 조금 더 작을지언정 하나도 부족함이 없는 세계에
+            내놔도 손색없는 훌륭한 수족관이었습니다.
+          </p>
+          <p>좋은 추억 만들게 해주고 감사합니다. ^^</p>
+
+          <div class="btn-review">
+            <a href="#" class="button">리뷰 보러가기</a>
+          </div>
+        </div>
+      </section>
+      <section class="section benefit">
+        <div class="benefit-bg">
+          <img src="./image/benefit-bg.png" alt="" />
+        </div>
+
+        <div class="benefit-con">
+          <h3>Benefit</h3>
+          <p>코엑스 아쿠아리움이 제공하는 다양한 할인 혜택 정보를 드립니다!</p>
+        </div>
+
+        <div class="inner">
+          <div class="benefit-kind">
+            <ul class="kind-list">
+              <li class="bene-kind kind-one">
+                <div class="bene-text">
+                  <h4>단체입장 혜택</h4>
+                  <p>학생 및 일반 단체예약 혜택을 보고가세요!</p>
+                  <div class="btn-bene"><a href="#">자세히 보기</a></div>
+                </div>
+              </li>
+              <li class="bene-kind kind-two">
+                <div class="bene-text">
+                  <h4>제휴할인</h4>
+                  <p>코엑스 아쿠아리움의 제휴할인 혜택을 살펴보세요!</p>
+                  <div class="btn-bene"><a href="#">자세히 보기</a></div>
+                </div>
+              </li>
+              <li class="bene-kind kind-three">
+                <div class="bene-text">
+                  <h4>우대/통신사</h4>
+                  <p>코엑스 아쿠아리움의 다양한 할인정보를 확인하세요!</p>
+                  <div class="btn-bene"><a href="#">자세히 보기</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class = 'section footer fq-auto-height'>
+      <div class="inner">
+        <div class="foot-top">
+          <div class="foot-logo">
+            <a href="#">
+              <img src="./image/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="foot-link">
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">방문 전 정보</a></li>
+              <li class="link-policy"><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">티켓구매</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <div class="foot-text">
+            <h5>서울특별시 강남구 영동대로 513 코엑스아쿠아리움</h5>
+            <p>
+              (주) 서울오션아쿠아리움 | 사업자등록번호 211-86-49403 | 대표이사
+              이성호
+            </p>
+            <p>
+              대표전화 02-700-7200 ㅣ팩스 02-700-7299 | 통신판매업신고
+              2014-서울강남-00715호
+            </p>
+          </div>
+          <div class="foot-sns">
+            <div class="facebook">
+              <a href="#"> </a>
+            </div>
+            <div class="youtube">
+              <a href="#"> </a>
+            </div>
+            <div class="instagram">
+              <a href="#"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button type="button" class="btn-top"><i class="hidden">TOP</i></button>
+    <hr />
+  </body>
+</html>
