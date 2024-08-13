@@ -924,7 +924,8 @@ main > section.benefit {
   font-weight: 300;
   font-family: "Pretendard";
 }
-` .foot-link li {
+
+.foot-link li {
   margin-top: 4rem;
 }
 
