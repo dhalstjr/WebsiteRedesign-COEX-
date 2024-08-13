@@ -3,9 +3,8 @@ $(function () {
 
   // 풀페이지 변수 적용
   const $window = $(window);
-  const $sideDot = $(".indicator button");
+  const $sideDot = $(".indicator li");
   const $section = $("#container > section");
-  const $btnTop = $(".btn-top");
 
   /* 헤더 부분 변수 저장 */
   const $header = $("#header");
@@ -13,6 +12,9 @@ $(function () {
   const $submenu = $(".submenu");
   const $subNotice = $(".sub-notice");
   const duration = 300;
+
+  /* Top 버튼 */
+  const $btnTop = $(".btn-top");
 
   // 헤더 부분 실행
   $menu.on("mouseenter", function () {
@@ -30,12 +32,21 @@ $(function () {
     $header.removeClass("active");
   });
 
+  /* top버튼이 처음에는 안보이게  */
+  $btnTop.hide();
+
   // 항목별 인덱스를 활용
   let secIdx = 0;
 
   updateDot(secIdx);
   moveSection(secIdx);
   // console.log($window, $sideDot, $section, $btnTop);
+
+  //Top버튼을 클릭했을 떄 상단으로 이동
+  $btnTop.on("click", function () {
+    secIdx = 0;
+    moveSection(secIdx);
+  });
 
   // section을  이동하는 동작을 함수로 정의
   function moveSection(index) {
@@ -48,12 +59,26 @@ $(function () {
       {
         scrollTop: posTop,
       },
-      300
+      400
     );
 
     updateDot(index);
     console.log(secIdx);
+
+    /* Top버튼 보이게 / 숨기게 */
+    if (secIdx >= 2) {
+      $btnTop.fadeIn();
+    } else {
+      $btnTop.fadeOut();
+    }
   }
+
+  // indicator를 클릭했을 떄
+  $sideDot.on("click", function () {
+    secIdx = $(this).index();
+
+    moveSection(secIdx);
+  });
 
   // indicator 업데이트 하는 함수
   function updateDot(index) {
